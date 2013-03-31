@@ -1,0 +1,39 @@
+
+=========================================================
+25.03.2013 - Version 1.0 Beta
+=========================================================
+
+The main change is you do not need edit any file for setup and module configuration: Module Preferences does the work!!
+
+Added:
+
+Module Preferences for:
+
+- Set up for the physical root (default: uploads)
+- Set up for the URL (default: uploads)
+- Rootname config.
+- Mimetypes denied: availables are bin, exe, spl, html, php.
+- Max Size for files config.
+- Select for thumbnails size 
+- uploadOverwrite: Replace files on upload or give them new names
+- Replace files on paste or give new names.
+- Set up height for elFinder window.
+- Set up for date format.
+- Active buttons selection. You can deactivated: 'download', 'remove','makedir','makefile', 'upload', 'copy', 	'cut', 'paste',	'edit', 'extract', 'archive'.
+- Default view mode: icons or list.
+
+More: 
+
+- Language Constants (English and Spanish)
+- ACP Module Administration: (Go to Module, Templates, Preferences, Update, About).
+- elFinder working now with the version of TinyMCE that comes with TinyConfig (thanks MacDonald).
+- Automatic Language selection: avalaible for en, es, de, fr and nl.
+
+Warning: if PHP debug mode is on, the module does not work.
+
+=========================================================
+12.02.2013 - Version 1.0 Alpha
+=========================================================
+
+Initial integration of elFinder Web File Manager in ImpressCMS as module. The bridge is Blank module by Madfish.
+TinyMCE integration: within any module is possible use elFinder for selecting, upload or filemanagement.
