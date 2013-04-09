@@ -3,14 +3,20 @@
 include_once "../../../mainfile.php";
 
 error_reporting(0); // Set E_ALL for debuging
-$physicalroot2 = $_SESSION['physicalroot'];
-$rootconfig2 = $_SESSION['rootconfig'];
-$uploadMaxSize;$_SESSION['uploadMaxSize'];
-$rootname2 = $_SESSION['rootname'];
-$upload_deny2 = $_SESSION['upload_deny'];
-$copyOverwrite2 = $_SESSION['copyOverwrite'];
-$uploadOverwrite2 = $_SESSION['uploadOverwrite'];
-$tmbSize2 = $_SESSION['tmbSize'];
+
+$handler = icms::handler( 'icms_module' );
+$elFinderModule = &$handler -> getByDirname( basename( dirname( dirname( __FILE__ ) ) ) );
+$config_handler = icms::$config;
+$elFinderModuleConfig = &$config_handler -> getConfigsByCat( 0, $elFinderModule -> getVar( 'mid' ) );
+$physicalroot2        = $elFinderModuleConfig['physycalrootconfig'];
+$rootconfig2        = $elFinderModuleConfig['rootconfig'];
+$uploadMaxSize2        = $elFinderModuleConfig['uploadMaxSize'];
+$rootname2            = $elFinderModuleConfig['rootname'];
+$upload_deny2        = $elFinderModuleConfig['upload_deny'];
+$copyOverwrite2        = $elFinderModuleConfig['copyOverwrite'];
+$uploadOverwrite2    = $elFinderModuleConfig['uploadOverwrite'];
+$tmbSize2            = $elFinderModuleConfig['tmbSize'];
+
 // Required for MySQL storage connector
 // include_once dirname(__FILE__).DIRECTORY_SEPARATOR.'elFinderVolumeMySQL.class.php';
 // Required for FTP connector support

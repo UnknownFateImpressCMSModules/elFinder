@@ -18,28 +18,11 @@ $xoopsOption["template_main"] = "elfinder_index.html";
 
 include_once ICMS_ROOT_PATH . "/header.php";
 
-/* Retrieve Module Preferences as vars and assign them as SESSION vars for use in class/connector.php */
+/* Retrieve Module Preferences as vars */
 
-$rootconfig = icms::$module -> config['rootconfig'];
-$physicalroot = icms::$module -> config['physycalrootconfig'];
-$rootname = icms::$module -> config['rootname'];
-$upload_deny = icms::$module -> config['upload_deny'];
-$uploadMaxSize = icms::$module -> config['uploadMaxSize'];
-$copyOverwrite = icms::$module -> config['copyOverwrite'];
-$uploadOverwrite = icms::$module -> config['uploadOverwrite'];
-$tmbSize = icms::$module -> config['tmbSize'];
 $height = icms::$module -> config['height'];
 $elfinder_dateformat = icms::$module -> config['elfinder_dateformat'];
 $defaultView = icms::$module -> config['defaultView'];
-
-$_SESSION['uploadMaxSize'] = $uploadMaxSize;
-$_SESSION['rootconfig'] = $rootconfig;
-$_SESSION['physicalroot'] = $physicalroot;
-$_SESSION['rootname'] = $rootname;
-$_SESSION['upload_deny'] = $upload_deny;
-$_SESSION['copyOverwrite'] = $copyOverwrite;
-$_SESSION['uploadOverwrite'] = $uploadOverwrite;
-$_SESSION['tmbSize'] = $tmbSize;
 
 /* Only Admins can upload restricted files according module preferences */
 if (!is_object(icms::$user) || !is_object($icmsModule) || !icms::$user->isAdmin($icmsModule->getVar('mid'))) 
