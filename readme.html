@@ -1,0 +1,287 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>elFinder - ImpressCMS Module - Readme file</title>
+<style type="text/css">
+body {
+  font: 14px/1.286 "Lucida Grande","Lucida Sans Unicode","DejaVu Sans",Lucida,Arial,Helvetica,sans-serif;	
+	color: #666;
+	margin: 0;
+	padding: 0;
+	background: #FFF;
+}
+a {
+    color:#2054C2;
+    text-decoration:none;
+}
+a:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+ol, ul {padding:5px 0 5px 0;margin-left:5px;}
+ul {list-style:disc inside none;}
+ol { list-style:decimal inside none;}
+li ol {padding-left:10px}
+code,pre{padding:0 3px 2px;font-family:Monaco,Menlo,Consolas,"Courier New",monospace;font-size:12px;color:#333;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
+code{padding:2px 4px;color:#d14;background-color:#f7f7f9;border:1px solid #e1e1e8}
+pre{display:block;padding:9.5px;margin:10px 0;font-size:13px;line-height:20px;word-break:break-all;word-wrap:break-word;white-space:pre;white-space:pre-wrap;background-color:#f5f5f5;border:1px solid #ccc;border:1px solid rgba(0,0,0,0.15);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.usual {
+	margin: 0;
+	padding: 30px 0;
+	text-align: center;
+	color: #666;
+	background: #EBEBEB;
+}
+div.page {
+	width: 800px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	background: #FFF;
+	padding:80px;
+	line-height:145%;
+	border-top:1px solid #DEDEDE;
+	border-left:1px solid #DEDEDE;
+	border-right:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;
+	-moz-box-shadow:0 4px 12px #333333;
+		-webkit-box-shadow:0 4px 12px #333333;
+	-khtml-box-shadow:0 4px 12px #333333;
+	box-shadow:0 4px 12px #333333;
+
+}
+#header {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial,  sans-serif;
+}
+p.description {
+	margin: 0;
+	color: #BBB;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+p.head_msg {
+	padding:0 0 20px;
+	}
+h1 {
+	clear:both;
+	font-weight: bold;
+	line-height:normal;
+	font-size: 2.8em;
+	margin: 0;
+	color:#F89617;
+}
+h2 {
+	clear:both;
+	font-size:1.3em;
+	line-height:normal;
+	color:#999;
+	margin:0;
+	padding-top:10px;
+	padding-bottom:5px;
+	line-height:normal;
+	border-bottom:2px solid #EDEDED;
+}
+h3 {
+	clear:both;
+	font-size:1em;
+	line-height:normal;
+	margin:0;
+	padding-top:8px;
+	padding-bottom:5px;
+	line-height:normal;
+}
+p {
+	margin:0;
+	padding:0 0 10px;
+	line-height:150%;
+}
+#footer {
+	text-align: center;
+	display: block;
+	clear: both;
+	color: #666;
+	font: 10px 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, sans-serif;
+	padding: 15px 50px 10px;
+}
+.clear {
+	clear: both;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+.center {
+	text-align: center;
+}
+.fl_left {
+	float: left;
+}
+.fl_right {
+	float: right;
+}
+.hidden {
+	visibility: hidden;
+}
+.small {
+	font-size: 10px;
+	line-height: 110%;
+	padding: 5px 0;
+}
+.noteline {
+	line-height: 200%;
+	border-bottom: 1px dotted #CCC;
+	padding-bottom: 5px;
+}
+.notice {
+	color: #F60;
+	background: inherit;
+	font-weight: bold;
+	border-bottom: 1px dotted #F30;
+}
+.topicbox {
+	display: block;
+	padding: 10px;
+	border: 1px solid #CCC;
+	background: #FDFDFD;
+	color: inherit;
+	margin: 10px 0;
+}
+.marker {
+	color: inherit;border-radius: 5px 5px 5px 5px;
+	background: #FDD;
+	padding: 5px;
+}
+.red {color:red}
+</style>
+</head><body class="usual">
+
+<div class="page">
+
+	<div id="header">
+		<h1>elFinder 1.0 - ImpressCMS Module: Final</h1>
+		<p class="description">Installation and Setting Instructions</p>
+	</div>
+	<div id="agreement">
+	<h2>Release Changelog</h2>
+		<p>The main change from Alpha release is you do not need edit any file for setup and module configuration: Module Preferences does the work!!</p><p>You can set up now:physical root, URL, Rootname config, Mimetypes denied ( availables are bin, exe, spl, html, php), Max. Size for files, thumbnails size, height for elFinder window, date format, active buttons selection, default view mode.</p>
+		<p>More: Language Constants (English and Spanish); ACP Module Administration: (Go to Module, Templates, Preferences, Update, About); elFinder working now with the version of TinyMCE that comes with TinyConfig (thanks MacDonald) and Automatic Language selection: avalaible for en, es, de, fr and nl.</p>
+		<p class="marker">Note: PHP debug mode must to be deactivated for this module in certain servers. If you get an error about "Data are not in Json format", deactivate debug mode for this module.
+		<h2>What is...and Whats is not</h2>
+		<p><a href="http://elfinder.org/">elFinder</a> is an open-source file manager for web, written in JavaScript using
+jQuery UI. Creation is inspired by simplicity and convenience of Finder program
+used in Mac OS X operating system.</p>
+		<p>This module integrate elFinder in an ImpressCMS site as a module and in tinyMCE editor. Creating or editing a page using that Editor you can upload files and insert download links in it. It was done using the Blank module by Madfish as base.</p>
+		<p>ImpressCMS has a great Imagemanager, but just now not a File or Media Manager and only article module by qm-b has upload files feature. Using this module you solve the problem, but really it is not a File Manager as Imagemanager core feature; only an external aplication integration as module.</p>
+		<p class="marker">This module uses User Groups Permissions feature; but further tests and research about security are neccesaries.</p>
+		<h3>Features</h3>
+		<ul>
+<li>All operations with files and folders on a remote server (copy, move,
+upload, create folder/file, rename, etc.)</li>
+<li>High performance server beckend and light client UI</li>
+<li>Multi-root support</li>
+<li>Local file system, MySQL, FTP volume storage drivers</li>
+<li>Background file upload with Drag &amp; Drop HTML5 support</li>
+<li>List and Icons view</li>
+<li>Keyboard shortcuts</li>
+<li>Standard methods of file/group selection using mouse or keyboard</li>
+<li>Move/Copy files with Drag &amp; Drop</li>
+<li>Archives create/extract (zip, rar, 7z, tar, gzip, bzip2)</li>
+<li>Rich context menu and toolbar</li>
+<li>Quicklook, preview for common file types</li>
+<li>Edit text files and images</li>
+<li>"Places" for your favorites</li>
+<li>Calculate directory sizes</li>
+<li>Thumbnails for image files</li>
+<li>Easy to integrate with web editors (elRTE, CKEditor, TinyMCE)</li>
+<li>Flexible configuration of access rights, upload file types, user interface
+and other</li>
+<li>Extensibility</li>
+<li>Simple client-server API based on JSON</li>
+</ul>
+	</div>
+
+	<div id="howto">
+		<h2>How to use</h2>
+		<h3>Installation method</h3>
+		<ol>
+			<li> Install the module according the normal procedure: decompress the zip file and upload <code>/elfinder</code> folder to <code>/modules</code> directory in your site.</li>
+			<li>Please login and go your Control Panel &gt;&gt; Modules &gt;&gt;. Click on install icon.</li>
+		</ol>
+		<h3>Setting up and Configuration</h3><br>
+		<p class="marker">WARNING: set the permissions for the module inmediatly. Go to Control Panel &gt;&gt; 
+System &gt;&gt; Users and Groups &gt;&gt; Groups and deactivate "Can access the following modules" for elFinder module; normally only Administrator User Group must access to it.</p>
+		<ul>
+		 <li>Preferences:
+			<ol>
+				<li>URL: URL where the files are located. Default: uploads.</li>
+				<li>Physical root: Remember if you change the default URL change this root too. Default: uploads.</li>
+				<li>Root name: Leave blank folder name will be used</li>
+<li>Mimetypes not allowed to upload: This selection is only for Groups can access the module, not for Groups can administrate it.</li>
+<li>Replace files on paste: Replace files on paste or give new names to pasted files. true - old file will be replaced with new one, false - new file get name - original_name-number.ext.</li>
+<li>Maximum upload file size: This size is per files. Value is a number.</li>
+<li>Replace files on upload?': Replace files on upload or give them new names. Yes - replace old files, No give new names like original_name-number.ext.</li>
+<li>Thumbnails size: Thumbnails size in pixels for preview. Thumbnails are square');</li>
+<li>Deactivated buttons: If you set up certain mimetypes as forbidden, remember deactivate  <em>rename</em>. This selection is only for Groups can access the module, not for Groups can administrate it.</li>
+<li>Height: The height of the elFinder main interface (in pixels).Default value: 400px.</li>
+<li>Datetime format: Value from selected language is used by default.
+Set format here to overwrite it. Format is set in <a href="http://www.php.net/manual/en/function.date.php">PHP date</a>. Default: d, Y h:i A will return Mar 13, 2012 05:27 PM.</li>
+<li>Default view mode':Can be icons and list. Default value: icons.</li>
+			</ol>
+		</li>  
+		</ul>
+		<h3>TinyMCE integration</h3>
+		<ul>
+		<li>Just copy the file <code>tinymce.php</code> from <code>extras</code> folder in<code>yoursite/editors/tinymce</code>, overwriting the same file (but not if your use TinyConfig module); or edit that file according this notes:</li>
+		<ol>
+		  <li>Open <code>/editors/tinymce/tinymce.php</code> file. About line 231 <pre>
+force_br_newlines : false,</pre> add <pre>
+file_browser_callback: &quot;elFinderBrowser&quot;,  </pre></li>
+	  <li>And just after this code <pre>function showMCE(id) {
+  if (tinyMCE.getInstanceById(id) == null) {
+      tinyMCE.execCommand(\&#39;mceAddControl\&#39;, false, id);
+  } else {
+      tinyMCE.execCommand(\&#39;mceRemoveControl\&#39;, false, id);
+  }
+}</pre> add <pre>function elFinderBrowser (field_name, url, type, win) {
+  var elfinder_url = &quot;&#39; . ICMS_URL . &#39;/modules/elFinder/tinymce.php&quot;;
+  tinyMCE.activeEditor.windowManager.open({
+    file: elfinder_url,
+    title: &quot;File Manager&quot;,
+    width: 900,  
+    height: 450,
+    resizable: &quot;yes&quot;,
+    inline: &quot;yes&quot;,    // This parameter only has an effect if you use the inlinepopups plugin!
+    popup_css: false, // 
+    close_previous: &quot;no&quot;
+  }, {
+    window: win,
+    input: field_name
+  });
+  return false;
+}</pre></li>
+		</ol>
+		<p>That´s all: now go to <code>yoursite/modules/elfinder</code> and enjoy of your new file manager!!, or editing and article using TinyMCE select some text, clic in Add Link buttom, and you have now a new icon for use the File Manager.</p>
+		<h2>Extras</h2>
+		
+<h3>Compres-Uncompress files</h3>
+<p>Imagine: your fist root is <code>/uploads</code> folder, the second <code>/modules</code>...you could upload a zip module file, uncompress it and go to Control Panel for installation within ImpressCMS. However note that feature is not PHP related. elFinder does not support PHP zip/zlib modules, it work's only with UNIX command-line utilities. There are autodetect feature; if you have problems, contact with your host provider.</p>
+	</div>
+	<div class="agreement">
+		<h2>License</h2>
+		<h3>elFinder License</h3>
+		   <p>elFinder is issued under a <a href="https://github.com/Studio-42/elFinder#license">3-clauses BSD license</a>.</p>
+		   <h3>Modifications for ImpressCMS License</h3>
+		   <p><a rel="license" href="http://www.gnu.org/licenses/gpl-3.0.txt">GNU General Public License v. 3.</a></p>
+	</div>
+	<div id="commercial">
+		<h2>Support</h2>
+		<h3>If you like a theme preview or a question, bugs, problems, suggestions...</h3>
+		<div class="topicbox">Support: <a href="http://community.impresscms.org/">Community Site</a></div>
+	</div>
+</div>
+<div id="footer">Copyleft 2013 by debianus.</div>
+</body></html>
