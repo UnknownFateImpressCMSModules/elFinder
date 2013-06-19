@@ -15,7 +15,7 @@ if (elFinder && elFinder.prototype && typeof(elFinder.prototype.i18) == 'object'
 			'error'                : 'Error',
 			'errUnknown'           : 'Error desconocido.',
 			'errUnknownCmd'        : 'Comando desconocido.',
-			'errJqui'              : 'Configuración no válida de jQuery UI. deben estar incluidos los componentes selectable, draggable y droppable.',
+			'errJqui'              : 'Configuración no válida de jQuery UI; deben estar incluidos los componentes selectable, draggable y droppable.',
 			'errNode'              : 'elFinder necesita crear elementos DOM.',
 			'errURL'               : 'Configuración no válida de elFinder: La opción URL no está configurada.',
 			'errAccess'            : 'Acceso denegado.',
@@ -24,7 +24,7 @@ if (elFinder && elFinder.prototype && typeof(elFinder.prototype.i18) == 'object'
 			'errTimeout'           : 'Conexión cancelada por exceso de tiempo.',
 			'errNotFound'          : 'Backend no encontrado.',
 			'errResponse'          : 'Respuesta no válida del backend.',
-			'errConf'              : 'Configuración no válida del backend .',
+			'errConf'              : 'Configuración no válida del backend.',
 			'errJSON'              : 'El módulo PHP JSON no está instalado.',
 			'errNoVolumes'         : 'No hay disponibles volúmenes legibles.',
 			'errCmdParams'         : 'Parámetros no válidos para el comando "$1".',
@@ -125,7 +125,7 @@ if (elFinder && elFinder.prototype && typeof(elFinder.prototype.i18) == 'object'
 			'ntfarchive'  : 'Creando archivo',
 			'ntfextract'  : 'Extrayendo elementos del archivo',
 			'ntfsearch'   : 'Buscando archivos...',
-			'ntfsmth'     : 'Procediendo... >_<',
+			'ntfsmth'     : 'Procediendo...',
 			'ntfloadimg'  : 'Cargando imagen',
 			
 			/************************************ dates **********************************/
@@ -181,7 +181,7 @@ if (elFinder && elFinder.prototype && typeof(elFinder.prototype.i18) == 'object'
 			'sortdate'          : 'por fecha',
 			/********************************** messages **********************************/
 			'confirmReq'      : 'Se necesita confirmación',
-			'confirmRm'       : '¿Está seguro de querer eliminar archivos?<br/>Esto no tiene vuelta atrás!',
+			'confirmRm'       : '¿Está seguro de querer eliminar archivos?<br/>No hay posibilidad de deshacer la eliminación',
 			'confirmRepl'     : '¿Reemplazar el antiguo archivo con el nuevo?',
 			'apllyAll'        : 'Aplicar a todo',
 			'name'            : 'Nombre',
@@ -334,4 +334,3 @@ if (elFinder && elFinder.prototype && typeof(elFinder.prototype.i18) == 'object'
 		}
 	}
 }
-

@@ -4,12 +4,12 @@
  *
  * This file holds the configuration information of this module
  *
- * @copyright		Copyright Madfish (Simon Wilkinson) 2011
+ * @copyright	Copyright Madfish (Simon Wilkinson) 2011
  * @license		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
  * @since		1.0
  * @author		Madfish (Simon Wilkinson) <simon@isengard.biz>
  * @author		Debianus
- * @package		elFinder
+ * @package	elFinder
  * @version		$Id$
  */
 
@@ -34,10 +34,10 @@ $modversion = array(
 
 /**  Development information */
 	"status_version"			=> "1.0",
-	"status"				=> "Beta",
-	"date"					=> "25/03/2013",
+	"status"				=> "Final",
+	"date"					=> "12/06/2013",
 	"author_word"				=> "",
-	"warning"				=> _CO_ICMS_WARNING_BETA,
+	"warning"				=> "",
 
 /** Contributors */
 	"developer_website_url"		=> "http://themes.impresscms.es",
