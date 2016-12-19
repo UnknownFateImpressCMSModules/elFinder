@@ -1,14 +1,6 @@
-<div class="page">
-
-<div id="header">
-
-# elFinder 1.0 - ImpressCMS Module: Final
+# elFinder
 
 Installation and Setting Instructions
-
-</div>
-
-<div id="agreement">
 
 ## Release Changelog
 
