@@ -45,10 +45,6 @@ This module uses User Groups Permissions feature; but further tests and research
 *   Extensibility
 *   Simple client-server API based on JSON
 
-</div>
-
-<div id="howto">
-
 ## How to use
 
 ### Installation method
@@ -124,10 +120,6 @@ That´s all: now go to `yoursite/modules/elfinder` and enjoy of your new file ma
 
 Imagine: your fist root is `/uploads` folder, the second `/modules`...you could upload a zip module file, uncompress it and go to Control Panel for installation within ImpressCMS. However note that feature is not PHP related. elFinder does not support PHP zip/zlib modules, it work's only with UNIX command-line utilities. There are autodetect feature; if you have problems, contact with your host provider.
 
-</div>
-
-<div class="agreement">
-
 ## License
 
 ### elFinder License
@@ -138,18 +130,8 @@ elFinder is issued under a [3-clauses BSD license](https://github.com/Studio-42/
 
 [GNU General Public License v. 3.](http://www.gnu.org/licenses/gpl-3.0.txt)
 
-</div>
-
-<div id="commercial">
-
 ## Support
 
 ### If you like a theme preview or a question, bugs, problems, suggestions...
 
-<div class="topicbox">Support: [Community Site](http://community.impresscms.org/)</div>
-
-</div>
-
-</div>
-
-<div id="footer">Copyleft 2013 by debianus.</div>
+Copyleft 2013 by debianus
